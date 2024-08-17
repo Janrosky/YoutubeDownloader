@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\janro\\OneDrive\\Desktop\\JanrosMediaPlayer\\",
+  "WorkspaceRootPath": "C:\\Users\\janro\\OneDrive\\Desktop\\YoutubeDownloader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DCA6E84-93AF-43BF-923E-819350A9BA0C}|JanrosMediaPlayer\\JanrosMediaPlayer.csproj|C:\\Users\\janro\\OneDrive\\Desktop\\JanrosMediaPlayer\\janrosmediaplayer\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0DCA6E84-93AF-43BF-923E-819350A9BA0C}|JanrosMediaPlayer\\JanrosMediaPlayer.csproj|solutionrelative:janrosmediaplayer\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0DCA6E84-93AF-43BF-923E-819350A9BA0C}|JanrosMediaPlayer\\YoutubeDownloader.csproj|c:\\users\\janro\\onedrive\\desktop\\youtubedownloader\\janrosmediaplayer\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DCA6E84-93AF-43BF-923E-819350A9BA0C}|JanrosMediaPlayer\\YoutubeDownloader.csproj|solutionrelative:janrosmediaplayer\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DCA6E84-93AF-43BF-923E-819350A9BA0C}|JanrosMediaPlayer\\JanrosMediaPlayer.csproj|c:\\users\\janro\\onedrive\\desktop\\janrosmediaplayer\\janrosmediaplayer\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DCA6E84-93AF-43BF-923E-819350A9BA0C}|JanrosMediaPlayer\\JanrosMediaPlayer.csproj|solutionrelative:janrosmediaplayer\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DCA6E84-93AF-43BF-923E-819350A9BA0C}|JanrosMediaPlayer\\YoutubeDownloader.csproj|c:\\users\\janro\\onedrive\\desktop\\youtubedownloader\\janrosmediaplayer\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DCA6E84-93AF-43BF-923E-819350A9BA0C}|JanrosMediaPlayer\\YoutubeDownloader.csproj|solutionrelative:janrosmediaplayer\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Menu.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\janro\\OneDrive\\Desktop\\JanrosMediaPlayer\\JanrosMediaPlayer\\Menu.cs",
+              "DocumentMoniker": "C:\\Users\\janro\\OneDrive\\Desktop\\YoutubeDownloader\\JanrosMediaPlayer\\Menu.cs",
               "RelativeDocumentMoniker": "JanrosMediaPlayer\\Menu.cs",
-              "ToolTip": "C:\\Users\\janro\\OneDrive\\Desktop\\JanrosMediaPlayer\\JanrosMediaPlayer\\Menu.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\janro\\OneDrive\\Desktop\\YoutubeDownloader\\JanrosMediaPlayer\\Menu.cs [Dise\u00F1o]",
               "RelativeToolTip": "JanrosMediaPlayer\\Menu.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-15T18:29:11.894Z",
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\janro\\OneDrive\\Desktop\\JanrosMediaPlayer\\JanrosMediaPlayer\\Menu.cs",
+              "DocumentMoniker": "C:\\Users\\janro\\OneDrive\\Desktop\\YoutubeDownloader\\JanrosMediaPlayer\\Menu.cs",
               "RelativeDocumentMoniker": "JanrosMediaPlayer\\Menu.cs",
-              "ToolTip": "C:\\Users\\janro\\OneDrive\\Desktop\\JanrosMediaPlayer\\JanrosMediaPlayer\\Menu.cs",
+              "ToolTip": "C:\\Users\\janro\\OneDrive\\Desktop\\YoutubeDownloader\\JanrosMediaPlayer\\Menu.cs",
               "RelativeToolTip": "JanrosMediaPlayer\\Menu.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAEwGIAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAEwGIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-15T18:41:45.851Z",
               "EditorCaption": ""
