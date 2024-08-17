@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YRCsfKNI6As=",
+  "dgSpecHash": "b1xlT/vCaMk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\janro\\OneDrive\\Desktop\\JanrosMediaPlayer\\JanrosMediaPlayer\\YoutubeDownloader.csproj",
+  "projectFilePath": "C:\\Users\\janro\\OneDrive\\Desktop\\YoutubeDownloader\\JanrosMediaPlayer\\YoutubeDownloader.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\janro\\.nuget\\packages\\anglesharp\\1.1.2\\anglesharp.1.1.2.nupkg.sha512",
     "C:\\Users\\janro\\.nuget\\packages\\fontawesome.sharp\\6.6.0\\fontawesome.sharp.6.6.0.nupkg.sha512",

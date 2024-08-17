@@ -39,26 +39,16 @@
             lblAppTitle = new Label();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             panel2 = new Panel();
-            tabControlMenu = new TabControl();
-            tabPage1 = new TabPage();
-            iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            btnPath = new FontAwesome.Sharp.IconButton();
-            lblStatus = new Label();
-            btnComenzarDescarga = new FontAwesome.Sharp.IconButton();
-            txtPath = new TextBox();
-            label2 = new Label();
-            txtUrl = new TextBox();
-            label1 = new Label();
-            tabPage2 = new TabPage();
-            tabPage3 = new TabPage();
             folderBrowser = new FolderBrowserDialog();
+            panelMain = new Panel();
+            label1 = new Label();
+            iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             panel1.SuspendLayout();
             PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
-            tabControlMenu.SuspendLayout();
-            tabPage1.SuspendLayout();
+            panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             SuspendLayout();
             // 
@@ -79,11 +69,11 @@
             // lblReservado
             // 
             lblReservado.AutoSize = true;
-            lblReservado.Font = new Font("Verdana", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblReservado.Font = new Font("Verdana", 8.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             lblReservado.ForeColor = SystemColors.ButtonFace;
             lblReservado.Location = new Point(40, 261);
             lblReservado.Name = "lblReservado";
-            lblReservado.Size = new Size(144, 16);
+            lblReservado.Size = new Size(130, 13);
             lblReservado.TabIndex = 2;
             lblReservado.Text = "chacon.jky ®  2024";
             // 
@@ -190,11 +180,11 @@
             // 
             lblAppTitle.AutoSize = true;
             lblAppTitle.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAppTitle.Location = new Point(28, 66);
+            lblAppTitle.Location = new Point(52, 66);
             lblAppTitle.Name = "lblAppTitle";
-            lblAppTitle.Size = new Size(172, 36);
+            lblAppTitle.Size = new Size(114, 36);
             lblAppTitle.TabIndex = 1;
-            lblAppTitle.Text = "Janros Youtube MP3\r\nDownloader";
+            lblAppTitle.Text = "Youtube MP3\r\nDownloader";
             lblAppTitle.TextAlign = ContentAlignment.TopCenter;
             // 
             // iconPictureBox2
@@ -220,151 +210,48 @@
             panel2.Size = new Size(580, 66);
             panel2.TabIndex = 1;
             // 
-            // tabControlMenu
+            // panelMain
             // 
-            tabControlMenu.Appearance = TabAppearance.FlatButtons;
-            tabControlMenu.Controls.Add(tabPage1);
-            tabControlMenu.Controls.Add(tabPage2);
-            tabControlMenu.Controls.Add(tabPage3);
-            tabControlMenu.Dock = DockStyle.Fill;
-            tabControlMenu.Location = new Point(220, 66);
-            tabControlMenu.Name = "tabControlMenu";
-            tabControlMenu.SelectedIndex = 0;
-            tabControlMenu.Size = new Size(580, 220);
-            tabControlMenu.TabIndex = 2;
-            // 
-            // tabPage1
-            // 
-            tabPage1.BackColor = SystemColors.ActiveCaption;
-            tabPage1.Controls.Add(iconPictureBox3);
-            tabPage1.Controls.Add(btnPath);
-            tabPage1.Controls.Add(lblStatus);
-            tabPage1.Controls.Add(btnComenzarDescarga);
-            tabPage1.Controls.Add(txtPath);
-            tabPage1.Controls.Add(label2);
-            tabPage1.Controls.Add(txtUrl);
-            tabPage1.Controls.Add(label1);
-            tabPage1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tabPage1.Location = new Point(4, 27);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(572, 189);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Descargar";
-            // 
-            // iconPictureBox3
-            // 
-            iconPictureBox3.BackColor = SystemColors.ActiveCaption;
-            iconPictureBox3.ForeColor = SystemColors.ControlText;
-            iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Shuffle;
-            iconPictureBox3.IconColor = SystemColors.ControlText;
-            iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox3.IconSize = 27;
-            iconPictureBox3.Location = new Point(108, 145);
-            iconPictureBox3.Name = "iconPictureBox3";
-            iconPictureBox3.Size = new Size(32, 27);
-            iconPictureBox3.TabIndex = 7;
-            iconPictureBox3.TabStop = false;
-            // 
-            // btnPath
-            // 
-            btnPath.IconChar = FontAwesome.Sharp.IconChar.Download;
-            btnPath.IconColor = Color.Black;
-            btnPath.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnPath.IconSize = 25;
-            btnPath.Location = new Point(497, 97);
-            btnPath.Name = "btnPath";
-            btnPath.Size = new Size(49, 24);
-            btnPath.TabIndex = 6;
-            btnPath.UseVisualStyleBackColor = true;
-            btnPath.Click += btnPath_Click;
-            // 
-            // lblStatus
-            // 
-            lblStatus.AutoSize = true;
-            lblStatus.Font = new Font("Verdana", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblStatus.ForeColor = SystemColors.ActiveCaptionText;
-            lblStatus.Location = new Point(6, 9);
-            lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(23, 18);
-            lblStatus.TabIndex = 5;
-            lblStatus.Text = "...";
-            // 
-            // btnComenzarDescarga
-            // 
-            btnComenzarDescarga.Font = new Font("Century", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnComenzarDescarga.IconChar = FontAwesome.Sharp.IconChar.None;
-            btnComenzarDescarga.IconColor = Color.Black;
-            btnComenzarDescarga.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnComenzarDescarga.Location = new Point(157, 145);
-            btnComenzarDescarga.Name = "btnComenzarDescarga";
-            btnComenzarDescarga.Size = new Size(389, 27);
-            btnComenzarDescarga.TabIndex = 4;
-            btnComenzarDescarga.Text = "Comienza la Descarga";
-            btnComenzarDescarga.UseVisualStyleBackColor = true;
-            btnComenzarDescarga.Click += btnComenzarDescarga_Click;
-            // 
-            // txtPath
-            // 
-            txtPath.Location = new Point(221, 97);
-            txtPath.Name = "txtPath";
-            txtPath.Size = new Size(271, 29);
-            txtPath.TabIndex = 3;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century", 12F);
-            label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point(23, 101);
-            label2.Name = "label2";
-            label2.Size = new Size(175, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Dirección de Descarga:";
-            // 
-            // txtUrl
-            // 
-            txtUrl.Location = new Point(221, 47);
-            txtUrl.Name = "txtUrl";
-            txtUrl.Size = new Size(325, 29);
-            txtUrl.TabIndex = 1;
+            panelMain.BackColor = SystemColors.ActiveCaptionText;
+            panelMain.Controls.Add(label1);
+            panelMain.Controls.Add(iconPictureBox3);
+            panelMain.Dock = DockStyle.Fill;
+            panelMain.Location = new Point(220, 66);
+            panelMain.Name = "panelMain";
+            panelMain.Size = new Size(580, 220);
+            panelMain.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century", 12F);
-            label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(6, 55);
+            label1.Font = new Font("Verdana", 8.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(249, 156);
             label1.Name = "label1";
-            label1.Size = new Size(199, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Ingresa el URL del Video:";
+            label1.Size = new Size(101, 13);
+            label1.TabIndex = 3;
+            label1.Text = "Menu Principal";
             // 
-            // tabPage2
+            // iconPictureBox3
             // 
-            tabPage2.BackColor = SystemColors.GradientInactiveCaption;
-            tabPage2.Location = new Point(4, 27);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(572, 189);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "VerVideos";
-            // 
-            // tabPage3
-            // 
-            tabPage3.BackColor = SystemColors.ActiveCaption;
-            tabPage3.Location = new Point(4, 27);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(572, 189);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "AcercaDe";
+            iconPictureBox3.BackColor = SystemColors.ActiveCaptionText;
+            iconPictureBox3.ForeColor = SystemColors.Control;
+            iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
+            iconPictureBox3.IconColor = SystemColors.Control;
+            iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox3.IconSize = 117;
+            iconPictureBox3.Location = new Point(239, 36);
+            iconPictureBox3.Name = "iconPictureBox3";
+            iconPictureBox3.Size = new Size(125, 117);
+            iconPictureBox3.TabIndex = 0;
+            iconPictureBox3.TabStop = false;
             // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 286);
-            Controls.Add(tabControlMenu);
+            Controls.Add(panelMain);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -378,9 +265,8 @@
             ((System.ComponentModel.ISupportInitialize)iconPictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
-            tabControlMenu.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
+            panelMain.ResumeLayout(false);
+            panelMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
             ResumeLayout(false);
         }
@@ -396,20 +282,11 @@
         private Panel panel2;
         private Label lblReservado;
         private Label lblAppTitle;
-        private TabControl tabControlMenu;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
-        private TextBox txtPath;
-        private Label label2;
-        private TextBox txtUrl;
-        private Label label1;
-        private FontAwesome.Sharp.IconButton btnComenzarDescarga;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private Label lblStatus;
         private FolderBrowserDialog folderBrowser;
-        private FontAwesome.Sharp.IconButton btnPath;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
-        private TabPage tabPage3;
+        private Panel panelMain;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private Label label1;
     }
 }
