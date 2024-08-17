@@ -41,8 +41,8 @@
             panel2 = new Panel();
             folderBrowser = new FolderBrowserDialog();
             panelMain = new Panel();
-            iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             label1 = new Label();
+            iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             panel1.SuspendLayout();
             PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox4).BeginInit();
@@ -221,6 +221,17 @@
             panelMain.Size = new Size(580, 220);
             panelMain.TabIndex = 2;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Verdana", 8.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(249, 156);
+            label1.Name = "label1";
+            label1.Size = new Size(101, 13);
+            label1.TabIndex = 3;
+            label1.Text = "Menu Principal";
+            // 
             // iconPictureBox3
             // 
             iconPictureBox3.BackColor = SystemColors.ActiveCaptionText;
@@ -234,17 +245,6 @@
             iconPictureBox3.Size = new Size(125, 117);
             iconPictureBox3.TabIndex = 0;
             iconPictureBox3.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 8.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(250, 156);
-            label1.Name = "label1";
-            label1.Size = new Size(101, 13);
-            label1.TabIndex = 3;
-            label1.Text = "Menu Principal";
             // 
             // Menu
             // 

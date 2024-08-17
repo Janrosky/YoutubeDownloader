@@ -40,37 +40,53 @@ namespace YoutubeDownloader
                 return;
             }
 
-            //Se crea una instancia de la clase YoutubeClient
-            var client = new YoutubeClient();
-
-            //Se obtiene la información del video
-            var video = await client.Videos.GetAsync(txtUrl.Text);
-
-            //Se obtiene la información de los streams del video
-            var streamInfoSet = await client.Videos.Streams.GetManifestAsync(txtUrl.Text);
-
-            //Se selecciona el stream de mayor calidad
-            var streamInfo = streamInfoSet.GetMuxedStreams().GetWithHighestVideoQuality();
-
-            // Deshabilitar botón y mostrar indicador
-            btnComenzarDescarga.Enabled = false;
-            lblStatus.Text = "Descargando...";
-
-            //Se descarga el video
-            if (streamInfo != null)
+            try
             {
-                //Se selecciona el lugar de descarga utilizando el txtPath
-                var path = txtPath.Text + "\\" + video.Title + ".mp4";
-                //Se descarga el video en esa ruta
-                await client.Videos.Streams.DownloadAsync(streamInfo, path);
+                // Deshabilitar botón y mostrar indicador
+                btnComenzarDescarga.Enabled = false;
+                lblStatus.Text = "Descargando...";
 
-                //Mostrar un panel de información que diga si se pudo descargar
-                MessageBox.Show("Video descargado con éxito");
+                //Se crea una instancia de la clase YoutubeClient
+                var client = new YoutubeClient();
+
+                //Se obtiene la información del video
+                var video = await client.Videos.GetAsync(txtUrl.Text);
+
+                //Se obtiene la información de los streams del video
+                var streamInfoSet = await client.Videos.Streams.GetManifestAsync(txtUrl.Text);
+
+                //Se selecciona el stream de mayor calidad
+                var streamInfo = streamInfoSet.GetMuxedStreams().GetWithHighestVideoQuality();
+
+                //Se descarga el video
+                if (streamInfo != null)
+                {
+                    //Se selecciona el lugar de descarga utilizando el txtPath
+                    var path = txtPath.Text + "\\" + video.Title + ".mp4";
+                    //Se descarga el video en esa ruta
+                    await client.Videos.Streams.DownloadAsync(streamInfo, path);
+
+                    //Mostrar un panel de información que diga si se pudo descargar
+                    MessageBox.Show("Video descargado con éxito en la carpeta que seleccionó");
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo descargar el video");
+                }
             }
-            else
+            catch (YoutubeExplode.Exceptions.VideoUnavailableException)
             {
-                MessageBox.Show("No se pudo descargar el video");
+                MessageBox.Show("El video no se pudo encontrar. Verifica la URL e intenta nuevamente.");
             }
+            catch (IOException ioEx)
+            {
+                MessageBox.Show($"Error al guardar el archivo: {ioEx.Message}");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error inesperado. Por favor, intenta nuevamente más tarde.");
+            }
+
             btnComenzarDescarga.Enabled = true;
             lblStatus.Text = "...";
         }
